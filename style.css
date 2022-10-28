@@ -8,9 +8,15 @@ img {
     height: 15rem;
     width: 150px;
     margin: 50 110;
+    animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
-h1 {
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    margin: -15 75;
-}
+
+@keyframes example {
+  0%   {background-color:black; left:0px; top:0px;}
+  25%  {background-color:black; left:200px; top:0px;}
+  50%  {background-color:black; left:200px; top:400px;}
+  75%  {background-color:black; left:0px; top:400px;}
+  100% {background-color:black; left:0px; top:0px;}
+} 
