@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
 body {
-    position: flex;
     height: 100
     width: auto;
 }
@@ -8,15 +7,16 @@ img {
     height: 15rem;
     width: 150px;
     margin: 50 110;
+    position: absolute;
     animation-name: example;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 
 @keyframes example {
-  0%   {background-color:black; left:0px; top:0px;}
-  25%  {background-color:black; left:200px; top:0px;}
-  50%  {background-color:black; left:200px; top:400px;}
-  75%  {background-color:black; left:0px; top:400px;}
-  100% {background-color:black; left:0px; top:0px;}
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:400px;}
+  75%  {left:0px; top:400px;}
+  100% {left:0px; top:0px;}
 } 
